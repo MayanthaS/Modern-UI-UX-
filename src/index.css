@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+
+
+
+@layer utilities{
+    .animation-in{
+        animation-fill-mode: both;;
+    }
+    .slide-in-from-top{
+        animation-name: slideInFromTop;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    }
+    /* .bg-glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    } */
+}
+@keyframes slideInFromTop {
+    from {
+       
+        opacity: 0;
+    }
+     to {
+       
+        opacity: 1;
+    }
+}
