@@ -68,36 +68,41 @@ export default function Navbar() {
         </div>
       </div>
       {mobileMenuOpen && (
-        <div>
-          <div className="md:hidden  bg-slate-900/95 backdrop:blur-lg border-t border-slate-800 slide-in-from-top  duration-300 flex flex-col items-center space-y-4 py-4 ">
+        <div className="md:hidden  bg-slate-900/95 backdrop:blur-lg border-t border-slate-800 animate-in slide-in-from-top  duration-300 flex flex-col items-center space-y-4 py-4 ">
+          <div className="px-4 py-4 sm:py-6 space-y-4">
             <a
               href="#Home"
-              className="text-gray-300  hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-gray-300  hover:text-white text-sm lg:text-base"
             >
               Home
             </a>
             <a
               href="#products"
-              className="text-gray-300  hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-gray-300  hover:text-white text-sm lg:text-base"
             >
               Products
             </a>
             <a
               href="#testimonials"
-              className="text-gray-300  hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-gray-300  hover:text-white text-sm lg:text-base"
             >
               Testimonials
             </a>
 
             <a
               href="#about"
-              className="text-gray-300  hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-gray-300  hover:text-white text-sm lg:text-base"
             >
               About
             </a>
             <a
               href="#contact"
-              className="text-gray-300  hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuOpen(false)}
+              className="blocktext-gray-300  hover:text-white text-sm lg:text-base"
             >
               Contacts
             </a>

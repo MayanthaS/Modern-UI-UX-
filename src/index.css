@@ -19,14 +19,19 @@
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.2);
     } */
+     .duration-300{
+        animation-duration: 0.3s;
+     }
 }
 @keyframes slideInFromTop {
     from {
        
         opacity: 0;
+        transform:translateY(-1rem) ;
     }
      to {
        
         opacity: 1;
+        transform:translateY(0) ;
     }
 }
